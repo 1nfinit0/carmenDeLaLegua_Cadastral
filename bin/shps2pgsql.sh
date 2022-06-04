@@ -10,3 +10,4 @@ shp2pgsql -s 32718:4326 -d -I -g geom ../shapefiles/shp_clegua/limite_cl.shp cle
 shp2pgsql -s 32718:4326 -d -I -g geom ../shapefiles/shp_clegua/sectores.shp clegua.sector | psql -d catastro -U dbatobi -W
 shp2pgsql -s 32718:4326 -d -I -g geom ../shapefiles/shp_clegua/manzanas_cl.shp clegua.manzana | psql -d catastro -U dbatobi -W
 shp2pgsql -s 32718:4326 -d -I -g geom ../shapefiles/shp_clegua/lotizacion_CL.shp clegua.lote | psql -d catastro -U dbatobi -W
+shp2pgsql -s 4326 -d -I -g geom ./shp_clegua/centroides.shp clegua.centroides_manzanas | psql -d catastro -U dbatobi -W
